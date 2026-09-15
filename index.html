@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre of Excellence | Government Polytechnic Madhepura</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Deep academic blue
+                        secondary: '#0284c7', // Bright tech blue
+                        accent: '#f59e0b', // Gold accent
+                        darkslate: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(rgba(2, 132, 199, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-secondary selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Title -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white shadow-md">
+                        <i data-lucide="cpu" class="w-7 h-7 text-accent"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Centre of Excellence</span>
+                        <h1 class="text-sm sm:text-base font-bold text-primary leading-tight">Govt. Polytechnic Madhepura</h1>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#horizons" class="hover:text-primary transition-colors">Horizons</a>
+                    <a href="#faculty" class="hover:text-primary transition-colors">Faculty & Leadership</a>
+                    <a href="#facilities" class="hover:text-primary transition-colors">Facilities & Projects</a>
+                    <a href="#contact" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors shadow-sm">Contact Us</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 text-slate-600 hover:text-primary focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block py-2 text-slate-600 hover:text-primary font-medium">Home</a>
+            <a href="#about" class="block py-2 text-slate-600 hover:text-primary font-medium">About</a>
+            <a href="#horizons" class="block py-2 text-slate-600 hover:text-primary font-medium">Horizons</a>
+            <a href="#faculty" class="block py-2 text-slate-600 hover:text-primary font-medium">Faculty & Leadership</a>
+            <a href="#facilities" class="block py-2 text-slate-600 hover:text-primary font-medium">Facilities & Projects</a>
+            <a href="#contact" class="block py-2 text-primary font-semibold">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative hero-pattern bg-gradient-to-b from-slate-100 to-white py-20 lg:py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
+                            <i data-lucide="award" class="w-4 h-4"></i>
+                            <span>Government Polytechnic Madhepura</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-darkslate tracking-tight">
+                            Centre of Excellence in <span class="text-secondary">Next-Gen Technology</span>
+                        </h1>
+                        <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                            Empowering diploma engineers through high-tech practical training, advanced R&D, and innovation hubs focusing on the Internet of Things (IoT) and 3D Printing.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#horizons" class="px-8 py-3 bg-primary text-white font-medium rounded-xl shadow-lg hover:bg-primary/95 transition-all text-center">
+                                Explore Our Horizons
+                            </a>
+                            <a href="#faculty" class="px-8 py-3 bg-white text-primary border border-primary/30 font-medium rounded-xl hover:bg-slate-50 transition-all text-center shadow-sm">
+                                Meet Leadership
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-200 text-center lg:text-left">
+                            <div>
+                                <p class="text-3xl font-extrabold text-primary">02</p>
+                                <p class="text-xs text-slate-500 uppercase font-medium mt-1">Core Horizons</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-extrabold text-primary">500+</p>
+                                <p class="text-xs text-slate-500 uppercase font-medium mt-1">Innovators Trained</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-extrabold text-primary">03</p>
+                                <p class="text-xs text-slate-500 uppercase font-medium mt-1">Expert Faculty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md bg-white p-4 rounded-2xl shadow-2xl border border-slate-200">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" 
+                                 alt="CoE Lab Madhepura" 
+                                 class="rounded-xl w-full h-80 object-cover"
+                                 onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=CoE+Madhepura'">
+                            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-slate-100 flex items-center space-x-3">
+                                <div class="p-3 bg-accent/10 rounded-lg text-accent">
+                                    <i data-lucide="cpu" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500">CoE In-charge</p>
+                                    <p class="text-sm font-bold text-darkslate">Prof. Nitish Kumar Thakur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-secondary">About The Centre</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-darkslate">Fostering Practical Engineering & Maker Culture</h2>
+                    <p class="text-slate-600">
+                        At Government Polytechnic Madhepura, our Centre of Excellence acts as a catalyst for student innovation, bridging theoretical engineering concepts with real-world physical and digital automation.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                            <i data-lucide="target" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkslate mb-3">Our Mission</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            To equip every student with cutting-edge hands-on proficiency in smart automation (IoT) and rapid prototyping (3D Printing).
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:bg-secondary group-hover:text-white transition-colors">
+                            <i data-lucide="wifi" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkslate mb-3">IoT Horizon</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Connecting physical devices to the cloud, building automated sensor networks, and teaching microcontroller programming under Prof. Nitish Kumar Thakur.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center text-amber-600 mb-6 group-hover:bg-accent group-hover:text-white transition-colors">
+                            <i data-lucide="box" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-darkslate mb-3">3D Printing Horizon</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Transforming computer-aided designs into physical objects with expert mentorship from Prof. Nitish Kumar Thakur, Prof. Surendra Parshad, and Prof. Muntazir Alam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="horizons" class="py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Core Technological Domains</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-darkslate">Our Two Main Horizons</h2>
+                    <p class="text-slate-600">
+                        Explore our specialized domains engineered to train students in the technologies of tomorrow.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Horizon 1: IoT -->
+                    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary">
+                                    <i data-lucide="wifi" class="w-8 h-8"></i>
+                                </div>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold uppercase tracking-wider rounded-full">Horizon 01</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-darkslate mb-4">Internet of Things (IoT)</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                The Internet of Things horizon enables students to design intelligent sensor-based systems, smart home automation, and industrial monitoring tools that communicate seamlessly over the cloud.
+                            </p>
+                            <div class="space-y-3 mb-8">
+                                <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                                    <span>Microcontroller Programming (ESP32, Arduino, Raspberry Pi)</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                                    <span>Cloud Protocols (MQTT, HTTP) & Real-time Dashboards</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-secondary flex-shrink-0"></i>
+                                    <span>Sensor Integration (Temperature, Gas, Humidity, Motion)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-slate-100 pt-6 flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Domain In-charge</p>
+                                <p class="text-sm font-bold text-primary">Prof. Nitish Kumar Thakur</p>
+                            </div>
+                            <button onclick="openModal('Internet of Things (IoT) Horizon', 'The IoT lab at Government Polytechnic Madhepura is equipped with advanced wireless sensor kits, ESP development boards, and cloud server connectors. Students create real-life projects like smart agriculture monitors and automated lighting systems.')" class="px-4 py-2 bg-secondary text-white text-xs font-semibold rounded-xl hover:bg-secondary/90 transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Horizon 2: 3D Printing -->
+                    <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-lg border border-slate-200 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center text-amber-600">
+                                    <i data-lucide="box" class="w-8 h-8"></i>
+                                </div>
+                                <span class="px-3 py-1 bg-amber-500/10 text-amber-600 text-xs font-bold uppercase tracking-wider rounded-full">Horizon 02</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-darkslate mb-4">3D Printing & Rapid Prototyping</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                The 3D Printing horizon empowers students to materialize imaginative concepts into physical models. From mechanical gears to custom enclosures, students learn computer-aided modeling and additive manufacturing.
+                            </p>
+                            <div class="space-y-3 mb-8">
+                                <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-amber-600 flex-shrink-0"></i>
+                                    <span>CAD Modeling & Slicing Software (Fusion 360, Cura)</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-amber-600 flex-shrink-0"></i>
+                                    <span>FDM 3D Printers Operation & Filament Handling</span>
+                                </div>
+                                <div class="flex items-center space-x-3 text-sm text-slate-700">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-amber-600 flex-shrink-0"></i>
+                                    <span>Rapid Prototyping for Final Year Student Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-slate-100 pt-6 flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Faculty Mentors</p>
+                                <p class="text-sm font-bold text-primary">Prof. N. K. Thakur, Prof. S. Parshad, Prof. M. Alam</p>
+                            </div>
+                            <button onclick="openModal('3D Printing Horizon', 'Our 3D Printing facility provides high-precision FDM printers where students learn rapid fabrication, slicing parameters, and mechanical design iterations for engineering innovations.')" class="px-4 py-2 bg-amber-600 text-white text-xs font-semibold rounded-xl hover:bg-amber-700 transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faculty" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Expert Guidance</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-darkslate">Leadership & Faculty</h2>
+                    <p class="text-slate-600">
+                        Dedicated academicians and technical experts spearheading the Centre of Excellence at Government Polytechnic Madhepura.
+                    </p>
+                </div>
+
+                <!-- CoE In-charge Spotlight -->
+                <div class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-secondary text-white rounded-3xl p-8 sm:p-10 shadow-xl mb-12 flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-36 h-36 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 border-2 border-white/20 shadow-inner">
+                        <i data-lucide="user-check" class="w-20 h-20 text-accent"></i>
+                    </div>
+                    <div class="space-y-3 text-center md:text-left">
+                        <span class="px-3 py-1 bg-accent text-slate-950 font-bold text-xs uppercase tracking-wider rounded-full">Centre In-charge</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold">Prof. Nitish Kumar Thakur</h3>
+                        <p class="text-sky-100 text-sm leading-relaxed">
+                            Leading the Centre of Excellence as CoE In-charge, Prof. Thakur oversees both the <strong class="text-white">Internet of Things (IoT)</strong> and <strong class="text-white">3D Printing</strong> domains. He is passionate about mentoring students in cutting-edge hardware automation and rapid prototyping.
+                        </p>
+                        <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-2">
+                            <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-medium">IoT Horizon Lead</span>
+                            <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-medium">3D Printing Mentor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faculty Grid -->
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold text-darkslate">CoE Faculty Members</h3>
+                    <p class="text-slate-500 text-xs mt-1">Specialized faculty driving our two horizons</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Faculty 1 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center text-primary mb-4 border-2 border-primary/20">
+                                <i data-lucide="user" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-darkslate">Prof. Nitish Kumar Thakur</h3>
+                            <p class="text-secondary text-xs font-semibold mt-1">CoE In-charge & IoT Lead</p>
+                            <p class="text-slate-500 text-xs mt-3 leading-relaxed">
+                                Expert in microcontroller systems, sensor integration, and smart network architectures.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200">
+                            <span class="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">IoT Domain</span>
+                        </div>
+                    </div>
+
+                    <!-- Faculty 2 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="w-20 h-20 mx-auto bg-amber-500/10 rounded-full flex items-center justify-center text-amber-600 mb-4 border-2 border-amber-500/20">
+                                <i data-lucide="user" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-darkslate">Prof. Surendra Parshad</h3>
+                            <p class="text-amber-600 text-xs font-semibold mt-1">Faculty Mentor</p>
+                            <p class="text-slate-500 text-xs mt-3 leading-relaxed">
+                                Specialized in additive manufacturing, 3D printing calibration, and mechanical CAD modeling.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200">
+                            <span class="inline-block px-3 py-1 bg-amber-500/10 text-amber-600 text-xs font-semibold rounded-full">3D Printing Domain</span>
+                        </div>
+                    </div>
+
+                    <!-- Faculty 3 -->
+                    <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-200 hover:shadow-lg transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center text-amber-600 mb-4 border-2 border-accent/20">
+                                <i data-lucide="user" class="w-10 h-10"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-darkslate">Prof. Muntazir Alam</h3>
+                            <p class="text-amber-600 text-xs font-semibold mt-1">Faculty Mentor</p>
+                            <p class="text-slate-500 text-xs mt-3 leading-relaxed">
+                                Expert in rapid prototyping workflows, material slicing, and innovative project design.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-200">
+                            <span class="inline-block px-3 py-1 bg-accent/10 text-amber-700 text-xs font-semibold rounded-full">3D Printing Domain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" class="py-20 bg-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Infrastructure & Innovations</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-darkslate">Facilities & Student Projects</h2>
+                    <p class="text-slate-600">
+                        State-of-the-art equipment and practical workstations available for students at Government Polytechnic Madhepura.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Facility Card 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&q=80&w=600" 
+                             alt="IoT Lab" 
+                             class="h-48 w-full object-cover"
+                             onerror="this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=IoT+Lab'">
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">IoT Horizon</span>
+                                <h3 class="text-xl font-bold text-darkslate mt-2 mb-2">IoT Prototyping Workstations</h3>
+                                <p class="text-slate-600 text-sm mb-4">
+                                    Equipped with ESP32 kits, breadboards, digital sensors, multimeters, and soldering stations.
+                                </p>
+                            </div>
+                            <span class="text-xs font-semibold text-primary">Managed by Prof. Nitish Kumar Thakur</span>
+                        </div>
+                    </div>
+
+                    <!-- Facility Card 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=600" 
+                             alt="3D Printing Lab" 
+                             class="h-48 w-full object-cover"
+                             onerror="this.src='https://placehold.co/600x400/f59e0b/ffffff?text=3D+Printing+Lab'">
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 bg-amber-500/10 text-amber-600 text-xs font-semibold rounded-full">3D Printing Horizon</span>
+                                <h3 class="text-xl font-bold text-darkslate mt-2 mb-2">Additive Manufacturing Suite</h3>
+                                <p class="text-slate-600 text-sm mb-4">
+                                    High-performance FDM 3D printers, PLA/ABS filament spools, and CAD modeling workstations.
+                                </p>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-600">Mentored by Prof. N. K. Thakur, Prof. S. Parshad & Prof. M. Alam</span>
+                        </div>
+                    </div>
+
+                    <!-- Facility Card 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&q=80&w=600" 
+                             alt="Innovation Hub" 
+                             class="h-48 w-full object-cover"
+                             onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Student+Projects'">
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">Student Showcase</span>
+                                <h3 class="text-xl font-bold text-darkslate mt-2 mb-2">Combined Innovation Projects</h3>
+                                <p class="text-slate-600 text-sm mb-4">
+                                    Students integrate 3D printed custom casings with IoT sensor circuits to build complete smart gadgets.
+                                </p>
+                            </div>
+                            <span class="text-xs font-semibold text-primary">Open for All Diploma Students</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-secondary">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold">Connect With Our Centre</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Have questions regarding our IoT or 3D Printing training sessions, facility access, or student enrollment? Reach out to Government Polytechnic Madhepura.
+                        </p>
+                        
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="p-3 bg-white/10 rounded-xl text-secondary"><i data-lucide="map-pin" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h3 class="text-sm font-bold">Location</h3>
+                                    <p class="text-slate-400 text-xs mt-1">Centre of Excellence, Government Polytechnic Madhepura, Bihar, India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="p-3 bg-white/10 rounded-xl text-secondary"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h3 class="text-sm font-bold">Email Address</h3>
+                                    <p class="text-slate-400 text-xs mt-1">coe.gpmadhepura@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="p-3 bg-white/10 rounded-xl text-secondary"><i data-lucide="user-check" class="w-5 h-5"></i></div>
+                                <div>
+                                    <h3 class="text-sm font-bold">CoE In-charge</h3>
+                                    <p class="text-slate-400 text-xs mt-1">Prof. Nitish Kumar Thakur</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7 bg-white text-slate-800 p-8 rounded-2xl shadow-xl">
+                        <h3 class="text-xl font-bold text-darkslate mb-6">Send an Inquiry</h3>
+                        <form id="inquiry-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Full Name</label>
+                                    <input type="text" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-secondary">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Email Address</label>
+                                    <input type="email" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-secondary">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Phone Number</label>
+                                    <input type="tel" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-secondary">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Select Horizon</label>
+                                    <select class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-secondary">
+                                        <option>Internet of Things (IoT)</option>
+                                        <option>3D Printing & Rapid Prototyping</option>
+                                        <option>Both Horizons / General Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Message</label>
+                                <textarea rows="4" required class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-secondary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary/90 transition-colors shadow-sm">
+                                Submit Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-xs">
+            <p>&copy; 2026 Centre of Excellence, Government Polytechnic Madhepura. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#home" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#home" class="hover:text-white transition-colors">Terms of Use</a>
+                <a href="#home" class="hover:text-white transition-colors">SBTE Bihar Guidelines</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for details -->
+    <div id="info-modal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white max-w-lg w-full p-6 rounded-2xl shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><i data-lucide="x" class="w-6 h-6"></i></button>
+            <h3 id="modal-title" class="text-xl font-bold text-darkslate mb-3"></h3>
+            <p id="modal-desc" class="text-slate-600 text-sm leading-relaxed mb-6"></p>
+            <button onclick="closeModal()" class="w-full py-2.5 bg-primary text-white rounded-xl text-sm font-medium">Close</button>
+        </div>
+    </div>
+
+    <!-- Notification Box -->
+    <div id="notification-box" class="hidden fixed bottom-6 right-6 z-50 bg-emerald-600 text-white px-6 py-3 rounded-xl shadow-lg flex items-center space-x-3 transition-all">
+        <i data-lucide="check-circle" class="w-5 h-5"></i>
+        <span id="notification-text" class="text-sm font-medium">Inquiry submitted successfully to CoE Team!</span>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on anchor click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Modal Handlers
+        function openModal(title, desc) {
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-desc').innerText = desc;
+            document.getElementById('info-modal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeModal() {
+            document.getElementById('info-modal').classList.add('hidden');
+        }
+
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const notification = document.getElementById('notification-box');
+            notification.classList.remove('hidden');
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 4000);
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
